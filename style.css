@@ -130,20 +130,20 @@ p {
   }
 }
 
-/* ---------- Dataworld sections ---------- */
+/* ---------- Datawalk sections ---------- */
 main {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.25rem;
 }
 
-.dataworld {
+.datawalk {
   padding: 1.75rem 0 2.25rem;
   border-top: 1px solid var(--border);
   scroll-margin-top: 1.25rem;
 }
 
-.dataworld h2 {
+.datawalk h2 {
   font-size: 1.7rem;
 }
 
