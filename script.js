@@ -15,6 +15,24 @@
     });
   });
 
+  /* ---------- Back to top ---------- */
+  var backToTop = document.getElementById("backToTop");
+
+  function updateBackToTop() {
+    if (window.scrollY > 300) {
+      backToTop.classList.add("visible");
+    } else {
+      backToTop.classList.remove("visible");
+    }
+  }
+
+  window.addEventListener("scroll", updateBackToTop, { passive: true });
+  updateBackToTop();
+
+  backToTop.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: supportsSmooth ? "smooth" : "auto" });
+  });
+
   /* ---------- Custom audio players ---------- */
   function fmt(t) {
     if (!isFinite(t) || t < 0) t = 0;
@@ -29,7 +47,7 @@
   var audios = Array.prototype.slice.call(document.querySelectorAll("audio"));
 
   audios.forEach(function (audio) {
-    audio.removeAttribute("controls"); // replaced by the custom UI below
+    audio.removeAttribute("controls");
     var label = audio.getAttribute("aria-label") || "audio";
 
     var wrap = document.createElement("div");

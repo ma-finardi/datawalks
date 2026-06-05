@@ -1,5 +1,6 @@
 # Local preview tooling (not part of the website)
 .claude/
+.venv/
 
 # OS / editor cruft
 .DS_Store
