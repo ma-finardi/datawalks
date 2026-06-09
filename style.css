@@ -662,6 +662,13 @@ details.transcript > .transcript-body p:last-child {
   margin-top: 0.25rem;
 }
 
+/* ---------- Online note ---------- */
+.online-note {
+  margin: 0.9rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 /* ---------- Motion preference ---------- */
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -672,4 +679,5 @@ details.transcript > .transcript-body p:last-child {
   .download-card {
     transition: none;
   }
+
 }
